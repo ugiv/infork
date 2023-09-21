@@ -1,0 +1,199 @@
+html{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App{
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header-container{
+  width: 90%;
+  max-width: 1400px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-side-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-side-header img{
+  width: 160px;
+}
+.menu-header {
+  margin-left: 20px;
+}
+.menu-header a{
+  margin-left: 50px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+.right-side-header{
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+.masuk, .daftar{
+  width: 90px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.masuk{
+  background-color: #1FD07D;
+  border: 1px solid #1FD07D;
+  color: white
+}
+.daftar{
+  border: 1px solid #1FD07D;
+}
+.jumbotron{
+  width: 90%;
+  max-width: 1400px;
+  height: 95%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.text-jumbotron {
+  width: 450px;
+}
+h1 {
+  font-size: 48px;
+  font-family: 'lato';
+  line-height: 70px;
+}
+p.description {
+  font-family: 'lato';
+  font-size: 16px;
+  line-height: 30px;
+}
+.button-jumbotron {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  justify-content: space-between;
+}
+.coba-sekarang, .pelajari{
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.coba-sekarang {
+  background-color: #1FD07D;
+  border: 2px solid #1FD07D;
+  color: white;
+  font-weight: bold;
+}
+.pelajari{
+  border: 2px solid #4D4D4D;
+  color: #4D4D4D;
+}
+.pelajari p{
+  font-weight: bold;
+}
+.hero img{
+  width: 670px;
+}
+
+@media only screen and (max-width: 1100px){
+  .jumbotron{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .header-container{
+    width: 80%;
+  }
+  h1{
+    margin-top: 100px;
+    width: 60%;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+  }
+  p.description {
+    text-align: center;
+    width: 70%;
+    color: #727272;
+  }
+  .text-jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .hero img{
+    width: 100%;
+  }
+  .menu-header{
+    display: none;
+  }
+  .daftar{
+    display: none;
+  }
+}
