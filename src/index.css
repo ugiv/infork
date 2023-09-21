@@ -169,23 +169,26 @@ p.description {
   .header-container{
     width: 80%;
   }
-  h1{
-    width: 60%;
-    font-size: 32px;
-    line-height: 46px;
-    text-align: center;
-  }
-  p.description {
-    text-align: center;
-    width: 70%;
-    color: #727272;
-  }
   .text-jumbotron {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+  }
+  h1{
+    width: 60%;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    margin: 0;
+  }
+  p.description {
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    width: 70%;
+    color: #727272;
+    margin: 20px;
   }
   .hero {
     width: 80%;
