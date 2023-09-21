@@ -132,7 +132,7 @@ p.description {
   display: flex;
   flex-direction: row;
   width: 320px;
-  justify-content: space-between;
+  justify-content: center;
 }
 .coba-sekarang, .pelajari{
   width: 150px;
@@ -161,19 +161,36 @@ p.description {
 }
 
 @media only screen and (max-width: 1100px){
-  .jumbotron{
-    flex-direction: column;
-    justify-content: space-around;
-    padding-top: 80px;
-  }
   .header-container{
     width: 80%;
+  }
+  header{
+    height: 10%;
+  }
+  .jumbotron{
+    margin-top: 10%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left-side-header img{
+    width: 120px;
   }
   .text-jumbotron {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10%;
+  }
+  .masuk{
+    width: 65px;
+    font-size: 14px;
+  }
+  .coba-sekarang, .pelajari{
+    width: 120px;
+    margin: 5px;
+    font-size: 14px;
   }
   h1{
     width: 60%;
@@ -188,10 +205,10 @@ p.description {
     text-align: center;
     width: 70%;
     color: #727272;
-    margin: 20px;
+    margin: 3%;
   }
   .hero {
-    width: 80%;
+    width: 70%;
   }
   .hero img{
     width: 100%
