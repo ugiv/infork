@@ -1,18 +1,14 @@
 html{
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -23,13 +19,12 @@ body {
 #root{
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0;
 }
 .home {
   width: 100%;
   height: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,6 +36,7 @@ code {
 .App{
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 header {
@@ -132,7 +128,7 @@ p.description {
   display: flex;
   flex-direction: row;
   width: 320px;
-  justify-content: center;
+  justify-content: space-between;
 }
 .coba-sekarang, .pelajari{
   width: 150px;
@@ -168,24 +164,29 @@ p.description {
     height: 10%;
   }
   .jumbotron{
-    margin-top: 10%;
+    padding-top: 15%;
     height: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
   }
   .left-side-header img{
     width: 120px;
   }
   .text-jumbotron {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10%;
+    margin-top: 10%;
+    margin-bottom: 5%;
   }
   .masuk{
     width: 65px;
     font-size: 14px;
+  }
+  .button-jumbotron{
+    justify-content: center;
   }
   .coba-sekarang, .pelajari{
     width: 120px;
@@ -193,8 +194,8 @@ p.description {
     font-size: 14px;
   }
   h1{
-    width: 60%;
-    font-size: 32px;
+    width: 90%;
+    font-size: 30px;
     line-height: 46px;
     text-align: center;
     margin: 0;
@@ -203,15 +204,19 @@ p.description {
     font-size: 16px;
     line-height: 23px;
     text-align: center;
-    width: 70%;
+    width: 90%;
     color: #727272;
     margin: 3%;
   }
   .hero {
-    width: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .hero img{
-    width: 100%
+    width: auto;
+    height: 100%;
   }
   .menu-header{
     display: none;
