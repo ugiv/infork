@@ -162,6 +162,8 @@ p.description {
   }
   header{
     height: 10%;
+    min-height: 70px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   }
   .jumbotron{
     height: 100%;
@@ -170,7 +172,7 @@ p.description {
     margin: 0;
   }
   .left-side-header img{
-    width: 120px;
+    width: 100px;
   }
   .text-jumbotron {
     width: 100%;
@@ -184,6 +186,10 @@ p.description {
   .masuk{
     width: 65px;
     font-size: 14px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .button-jumbotron{
     justify-content: center;
@@ -213,9 +219,9 @@ p.description {
     flex-direction: column;
     justify-content: center;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 26px;
     text-align: center;
-    width: 90%;
+    max-width: 350px;
     height: 20%;
     color: #727272;
     margin: 0
