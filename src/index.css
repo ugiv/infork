@@ -164,10 +164,10 @@ p.description {
     height: 10%;
   }
   .jumbotron{
-    padding-top: 15%;
     height: 100%;
+    padding-top: 15%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
   .left-side-header img{
     width: 120px;
@@ -189,14 +189,15 @@ p.description {
     justify-content: center;
   }
   .coba-sekarang, .pelajari{
-    width: 120px;
+    width: 100px;
+    height: 40px;
     margin: 5px;
-    font-size: 14px;
+    font-size: 12px;
   }
   h1{
-    width: 100%;
+    max-width: 300px;
     font-size: 30px;
-    line-height: 46px;
+    line-height: 44px;
     text-align: center;
     margin: 0;
   }
@@ -204,19 +205,20 @@ p.description {
     font-size: 16px;
     line-height: 23px;
     text-align: center;
-    width: 100%;
+    width: 90%;
     color: #727272;
-    margin: 3%;
+    margin: 5%;
   }
   .hero {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-top: 15%;
   }
   .hero img{
-    width: auto;
-    height: 100%;
+    width: 100%;
   }
   .menu-header{
     display: none;

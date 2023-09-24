@@ -27,7 +27,7 @@ function Home(){
             <div className='jumbotron'>
                 <div className='text-jumbotron'>
                     <h1>Bagikan acaramu dengan mudah dan menarik.</h1>
-                    <p className='description'>Bagikan informasi melalui digital page untuk semua acaramu dengan mudah dan menarik hanya dalam beberapa menit.</p>
+                    <p className='description'>Bagikan informasi melalui digital page untuk semua acaramu.</p>
                     <div className='button-jumbotron'>
                         <div className='coba-sekarang'>
                             <p>Coba Sekarang</p>
