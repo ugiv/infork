@@ -211,7 +211,7 @@ p.description {
 .benefit-container{
   width: 800px;
   display: flex;
-  padding: 0 5%;
+  padding-left: 25px;
 }
 .benefit-box {
   width: 225px;
@@ -222,19 +222,19 @@ p.description {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 10px;
+  margin-right: 25px;
 }
 .benefit-one {
   box-shadow: 7px 7px 18px rgba(210, 250, 223, 0.5);
-  border: 1px solid rgba(210, 250, 223, 1);
+  border: 1px solid rgba(210, 250, 223, 0.3);
 }
 .benefit-two {
   box-shadow: 7px 7px 18px rgba(255, 235, 226, 1);
-  border: 1px solid rgba(255, 235, 226, 0.5);
+  border: 1px solid rgba(255, 235, 226, 0.3);
 }
 .benefit-three {
   box-shadow: 7px 7px 18px rgba(225, 210, 250, 1);
-  border: 1px solid rgba(225, 210, 250, 0.5);
+  border: 1px solid rgba(225, 210, 250, 0.3);
 }
 .icon-picture{
   width: 100px;
@@ -275,7 +275,7 @@ p.description {
   }
   header{
     /* height: 10%; */
-    min-height: 70px;
+    max-height: 70px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   }
   .jumbotron{
