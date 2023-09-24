@@ -1,5 +1,11 @@
 import logo from '../image/logo.png';
 import hero from '../image/hero.png';
+import music from '../image/music.png';
+import sport from '../image/sport.png';
+import family from '../image/family.png';
+import formal from '../image/formal.png';
+import mockup from '../image/Mockup.png'
+
 
 function Home(){
     return (
@@ -39,6 +45,52 @@ function Home(){
                 </div>
                 <div className='hero'>
                     <img src={hero} alt='' />
+                </div>
+            </div>
+            <div className='feature-benefit'>
+                <div className="feature">
+                    <h2>Apapun acaramu kami telah siapkan.</h2>
+                    <div className='list-feature'>
+                            <div className='list'>
+                                <div className='icon-feature'>
+                                    <img src={music} alt='music icon' />
+                                </div>
+                                <div className='text-feature'>
+                                    <h3>Music</h3>
+                                    <p>Acara pensi, konser musik, live music, atau dangdutan makin menarik dengan undangan digital.</p>
+                                </div>
+                            </div>
+                            <div className='list'>
+                                <div className='icon-feature'>
+                                    <img src={sport} alt='music icon' />
+                                </div>
+                                <div className='text-feature'>
+                                    <h3>Sport</h3>
+                                    <p>Acara olahraga kampus, sekolah, atau lingkungan rumah lebih menarik menggunakan undangan digital.</p>
+                                </div>
+                            </div>
+                            <div className='list'>
+                                <div className='icon-feature'>
+                                    <img src={family} alt='music icon' />
+                                </div>
+                                <div className='text-feature'>
+                                    <h3>Keluarga</h3>
+                                    <p>Kumpulkan semua anggota keluarga dengan undangan yang menarik dan mudah.</p>
+                                </div>
+                            </div>
+                            <div className='list'>
+                                <div className='icon-feature'>
+                                    <img src={formal} alt='music icon' />
+                                </div>
+                                <div className='text-feature'>
+                                    <h3>formal</h3>
+                                    <p>Buat undangan acara kantor, institusi, atau acara resmi lainnya dengan mudah dan cepat .</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div className='mockup-design'>
+                        <img src={mockup} alt='' />
+                    </div>
                 </div>
             </div>
         </div>
