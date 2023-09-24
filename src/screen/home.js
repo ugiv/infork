@@ -4,7 +4,12 @@ import music from '../image/music.png';
 import sport from '../image/sport.png';
 import family from '../image/family.png';
 import formal from '../image/formal.png';
-import mockup from '../image/Mockup.png'
+import mockup from '../image/Mockup.png';
+import dibagikan from '../image/mudah-dibagikan.png';
+import dibuat from '../image/Mudah-dibuat.png';
+import gratis from '../image/gratis.png';
+
+
 
 
 function Home(){
@@ -90,6 +95,37 @@ function Home(){
                     </div>
                     <div className='mockup-design'>
                         <img src={mockup} alt='' />
+                    </div>
+                </div>
+                <div className='benefit'>
+                    <div className='benefit-container'>
+                        <div className='benefit-box benefit-one'>
+                            <div className='icon-picture'>
+                                <img src={dibuat} alt='dibuat' />
+                            </div>
+                            <div className='text-benefit'>
+                                <h3>Mudah dibuat</h3>
+                                <p>Pilih tempate yang disukai lalu langsung edit text sesuai dengan yang kamu butuhkan.</p>
+                            </div>
+                        </div>
+                        <div className='benefit-box benefit-two'>
+                            <div className='icon-picture'>
+                                <img src={dibagikan} alt='dibagikan' />
+                            </div>
+                            <div className='text-benefit'>
+                                <h3>Mudah dibagikan</h3>
+                                <p>Pilih tempate yang disukai lalu langsung edit text sesuai dengan yang kamu butuhkan.</p>
+                            </div>
+                        </div>
+                        <div className='benefit-box benefit-three'>
+                            <div className='icon-picture'>
+                                <img src={gratis} alt='dibagikan' />
+                            </div>
+                            <div className='text-benefit'>
+                                <h3>Gratis</h3>
+                                <p>Pilih tempate yang disukai lalu langsung edit text sesuai dengan yang kamu butuhkan.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
