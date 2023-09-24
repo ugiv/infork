@@ -25,9 +25,6 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -283,9 +280,9 @@ p.description {
   }
   .jumbotron{
     height: 100%;
+    margin: 0 5%;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0;
   }
   .left-side-header img{
     width: 100px;
