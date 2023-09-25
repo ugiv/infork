@@ -36,26 +36,28 @@ function Home(){
                 </div>
             </header>
             <div className='jumbotron'>
-                <div className='text-jumbotron'>
-                    <h1>Bagikan acaramu dengan mudah dan menarik.</h1>
-                    <p className='description'>Bagikan informasi secara digital untuk semua acaramu.</p>
-                    <div className='button-jumbotron'>
-                        <div className='coba-sekarang'>
-                            <p>Coba Sekarang</p>
-                        </div>
-                        <div className='pelajari'>
-                            <p>Pelajari</p>
+                <div className='jumbotron-container'>
+                    <div className='text-jumbotron'>
+                        <h1>Bagikan acaramu dengan mudah dan menarik.</h1>
+                        <p className='description'>Bagikan informasi secara digital untuk semua acaramu.</p>
+                        <div className='button-jumbotron'>
+                            <div className='coba-sekarang'>
+                                <p>Coba Sekarang</p>
+                            </div>
+                            <div className='pelajari'>
+                                <p>Pelajari</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='hero'>
-                    <img src={hero} alt='' />
+                    <div className='hero'>
+                        <img src={hero} alt='' />
+                    </div>
                 </div>
             </div>
             <div className='feature-benefit'>
                 <div className="feature">
-                    <h2>Apapun acaramu kami telah siapkan.</h2>
                     <div className='list-feature'>
+                        <h2>Apapun acaramu kami telah siapkan.</h2>
                             <div className='list'>
                                 <div className='icon-feature'>
                                     <img src={music} alt='music icon' />
@@ -127,6 +129,12 @@ function Home(){
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className='footer'>
+                <div className='footer-container'>
+                    <p>© 2023 PT. Energi Kreatif Bangsa</p>
+                    <img src={logo} alt='logo' />
                 </div>
             </div>
         </div>

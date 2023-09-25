@@ -21,13 +21,13 @@ body {
   height: 100%;
   margin: 0;
 }
+.home{
+  display: block;
+}
 .home {
   width: 100%;
   height: 100%;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -38,20 +38,26 @@ code {
   height: 100%;
   margin: 0;
 }
-
+/* this header section */
+header{
+  /* height: 10%; */
+  height: 72px;
+  max-height: 70px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
 header {
   width: 100%;
-  height: 80px;
   background-color: white;
   position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 .header-container{
-  width: 90%;
-  max-width: 1400px;
+  width: 80%;
+  max-width: 1300px;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -65,16 +71,10 @@ header {
   justify-content: space-between;
 }
 .left-side-header img{
-  width: 160px;
+  width: 100px;
 }
 .menu-header {
   margin-left: 20px;
-}
-.menu-header a{
-  margin-left: 50px;
-  color: black;
-  font-weight: 600;
-  text-decoration: none;
 }
 .right-side-header{
   width: auto;
@@ -95,44 +95,98 @@ header {
 .masuk{
   background-color: #1FD07D;
   border: 1px solid #1FD07D;
-  color: white
+  color: white;
+  width: 65px;
+  font-size: 14px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-header{
+  display: none;
 }
 .daftar{
-  border: 1px solid #1FD07D;
+  display: none;
 }
+@media only screen and (min-width: 1100px){
+  .menu-header{
+    display: block;
+  }
+  .menu-header a{
+    margin-left: 50px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+/* this jumbotron section */
 .jumbotron{
-  width: 90%;
-  max-width: 1400px;
-  height: 95%;
-  margin-top: 5%;
+  width: 100%;
+  height: 100%;
+  max-height: 800px;
+  min-height: 750px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.jumbotron-container{
+  height: 100%;
+  width: 90%;
+  margin: 0 5%;
+  display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: column;
 }
 .text-jumbotron {
-  width: 450px;
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
 }
-h1 {
-  font-size: 48px;
+h1{
+  max-width: 300px;
+  height: 50%;
+  display: flex;
   font-family: 'lato';
-  line-height: 70px;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  margin: 0;
 }
 p.description {
+  display: flex;
   font-family: 'lato';
+  flex-direction: column;
+  justify-content: center;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 26px;
+  text-align: center;
+  max-width: 300px;
+  height: 10%;
+  color: #727272;
+  margin: 0
 }
 .button-jumbotron {
-  margin-top: 20px;
+  height: 20%;
   display: flex;
   flex-direction: row;
   width: 320px;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 .coba-sekarang, .pelajari{
-  width: 150px;
+  width: 100px;
   height: 40px;
+  margin: 5px;
+  font-size: 12px;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -152,14 +206,73 @@ p.description {
 .pelajari p{
   font-weight: bold;
 }
-.hero img{
-  width: 670px;
+.hero {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
+.hero img{
+  width: auto;
+  height: 100%;
+}
+.header-container{
+  width: 80%;
+}
+
+@media only screen and (min-width: 1100px){
+  .jumbotron-container {
+    max-width: 1300px;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .text-jumbotron{
+    width: 45%;
+    height: 380px;
+    min-width: 450px;
+    align-items: flex-start;
+  }
+  h1{
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    text-align: left;
+    font-size: 48px;
+    line-height: 66px;
+  }
+  p.description {
+    
+    text-align: left;
+  }
+  .button-jumbotron{
+    width: 220px;
+    justify-content: space-between;
+  }
+  .hero {
+    width: 55%;
+  }
+  .hero img{
+    width: 100%;
+    height: auto;
+  }
+  .coba-sekarang, .pelajari{
+    margin: 0;
+  }
+}
+
+/* feature and benefit section  */
 .feature-benefit {
   margin-top: 50px;
-  /* display: flex;
+  width: 100%;
+  display: flex;
   flex-direction: column;
-  align-items: flex-start; */
+  align-items: center;
 }
 .list{
   display: flex;
@@ -209,10 +322,12 @@ p.description {
   width: 100%;
   display: flex;
   overflow-x: auto;
+  margin-bottom: 50px;
 }
 
 .benefit-container{
   width: 800px;
+  padding: 20px 0;
   display: flex;
   padding-left: 25px;
 }
@@ -271,99 +386,58 @@ p.description {
   line-height: 24px;
   color: #808080;
 }
-
-@media only screen and (max-width: 1100px){
-  .home{
-    display: block;
-  }
-  .header-container{
+@media only screen and (min-width: 1100px){
+  .feature{
     width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
-  header{
-    /* height: 10%; */
-    max-height: 70px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  .list-feature{
+    width: 60%;
   }
-  .jumbotron{
-    height: 100%;
-    max-height: 800px;
-    min-height: 750px;
-    margin: 0 5%;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .left-side-header img{
-    width: 100px;
-  }
-  .text-jumbotron {
+  .feature h2 {
     width: 100%;
-    height: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 100px;
-  }
-  .masuk{
-    width: 65px;
-    font-size: 14px;
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .button-jumbotron{
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    height: 20%;
-  }
-  .coba-sekarang, .pelajari{
-    width: 100px;
-    height: 40px;
-    margin: 5px;
-    font-size: 12px;
-  }
-  h1{
-    max-width: 300px;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-size: 32px;
-    line-height: 44px;
-    text-align: center;
-    margin: 0;
+    margin: 20px 0;
   }
-  p.description {
-    display: flex;
-    flex-direction: column;
+  .mockup-design{
+    width: 40%;
+  }
+  .benefit {
     justify-content: center;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    max-width: 300px;
-    height: 10%;
-    color: #727272;
-    margin: 0
+    margin: 50px 0;
   }
-  .hero {
-    width: 100%;
-    height: 40%;
+  .benefit-container{
+    width: 80%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .hero img{
-    width: auto;
-    height: 100%;
+  .benefit-box{
+    margin: 0 50px;
   }
-  .menu-header{
-    display: none;
-  }
-  .daftar{
-    display: none;
-  }
+}
+
+.footer {
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  width: 80%;
+  height: 60px;
+  margin: 0 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer img {
+  width: 80px;
+}
+.footer p{
+  font-size: 12px;
 }
