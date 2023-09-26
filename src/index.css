@@ -3,6 +3,7 @@ html{
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #FAFAFA;
 }
 body {
   width: 100%;
@@ -130,6 +131,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 .jumbotron-container{
   height: 100%;
@@ -341,6 +343,7 @@ p.description {
   align-items: center;
   text-align: center;
   margin-right: 25px;
+  background-color: white;
 }
 .benefit-one {
   box-shadow: 7px 7px 18px rgba(210, 250, 223, 0.5);
@@ -419,6 +422,110 @@ p.description {
     margin: 0 50px;
   }
 }
+/* banner section  */
+
+.banner {
+  width: 90%;
+  height: auto;
+  padding: 20px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid #1FD07D;
+  border-radius: 20px;
+  background-color: white;
+}
+.hero-banner{
+  width: 85%;
+  margin: 0 auto;
+}
+.hero-banner img {
+  width: 100%;
+}
+.text-banner {
+  width: 80%;
+  height: auto;
+}
+.text-banner h3{
+  font-size: 20px;
+  line-height: 26px;
+}
+.text-banner p{
+  font-size: 14px;
+  color: #727272;
+  line-height: 20px;
+}
+.text-banner a {
+  font-size: 14px;
+  padding: 10px;
+  background-color: #1FD07D;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+}
+@media only screen and (min-width: 1100px){
+  .banner {
+    flex-direction: row;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .hero-banner {
+    padding-top: 140px;
+    width: 25%;
+  }
+  .hero-banner img{
+    width: 100%;
+  }
+  .text-banner{
+    width: 40%;
+    padding: 20px 10%;
+  }
+  .text-banner h3{
+    font-size: 30px;
+    line-height: 44px;
+  }
+  .text-banner p{
+    font-size: 16px;
+    color: #727272;
+    line-height: 24px;
+  }
+}
+
+/* digital page section */
+
+.digital-page{
+  width: 100%;
+  height: auto;
+  margin: 50px 0;
+}
+.digital-page h3{
+  margin: 50px 10%;
+  font-size: 20px;
+}
+.digital-page img {
+  width: 250px;
+  border-radius: 20px;
+  padding-right: 50px;
+}
+
+.digital-page-scroll{
+  overflow-x: auto;
+  width: 90%;
+  padding-left: 10%;
+}
+.digital-page-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 20px;
+}
+
+
 
 .footer {
   width: 100%;

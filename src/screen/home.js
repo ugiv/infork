@@ -8,6 +8,11 @@ import mockup from '../image/Mockup.png';
 import dibagikan from '../image/mudah-dibagikan.png';
 import dibuat from '../image/Mudah-dibuat.png';
 import gratis from '../image/gratis.png';
+import banner from '../image/Tarkuy-editable.png';
+import orange from '../image/orange.png';
+import running from '../image/Running.png';
+import tarkuy from '../image/Tarkuy.png';
+import moonsic from '../image/Moonsic.png';
 
 
 
@@ -128,6 +133,27 @@ function Home(){
                                 <p>Pilih tempate yang disukai lalu langsung edit text sesuai dengan yang kamu butuhkan.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className='banner'>
+                <div className='hero-banner'>
+                    <img src={banner} alt='digital page editable' />
+                </div>
+                <div className='text-banner'>
+                    <h3>Edit dan bagikan sesukamu kapanpun kamu mau.</h3>
+                    <p>Pilih design yang kamu suka kemudian edit text sesuai yang kamu mau. Lalu bagikan keseluruh media yang terhubung dengan internet.</p>
+                    <a href>Buat sekarang</a>
+                </div>
+            </div>
+            <div className='digital-page'>
+                <h3>Digital Page Design</h3>
+                <div className='digital-page-scroll'>
+                    <div className='digital-page-container'>
+                        <img src={orange} alt='orange' />
+                        <img src={moonsic} alt='orange' />
+                        <img src={running} alt='orange' />
+                        <img src={tarkuy} alt='orange' />
                     </div>
                 </div>
             </div>
