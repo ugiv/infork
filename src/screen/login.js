@@ -5,6 +5,7 @@ import logo from '../image/logo.png';
 function Login(){
     return (
         <div className='login'>
+        <div className='login-container'>
             <div className='jumbotron-side'>
                 <div className='jumbotron-container-login'>
                     <img src={heroLogin} alt='connection' />
@@ -47,6 +48,7 @@ function Login(){
                     </form>
                 </div>
             </div>
+        </div>
             <div className='footer'>
                 <div className='footer-container'>
                     <p>© 2023 PT. Energi Kreatif Bangsa</p>

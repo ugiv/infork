@@ -3,6 +3,15 @@ html{
 }
 .login{
     width: 100%;
+    height: 100%;
+}
+.login-container {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .form-side{
     width: 90%;
@@ -13,8 +22,9 @@ html{
     /* display: none; */
 }
 .google-button {
-    width: 300px;
-    height: 40px;
+    width: 85%;
+    max-width: 400px;
+    height: 35px;
     padding: 2px 0;
     border: 1px solid #CCCCCC;
     border-radius: 50px;
@@ -29,17 +39,21 @@ html{
     margin: 0 10px;
 }
 .line{
-    width: 300px;
+    width: 90%;
+    min-width: 250;
+    max-width: 400px;
     height: 1px;
     background-color: #CCCCCC;
     margin: 20px 0;
 }
 .input-form{
-    width: 300px;
+    width: 85%;
+    min-width: 250px;
+    max-width: 400px;
 }
 .input-container{
     width: 100%;
-    height: 40px;
+    height: 35px;
     border: 1px solid #CCCCCC;
     padding: 2px 0;
     overflow: hidden;
@@ -85,31 +99,66 @@ input {
     justify-content: center;
     align-items: center;
 }
-
-
 textarea:focus, input:focus{
     outline: none;
 }
 .jumbotron-side{
     width: 100%;
-    max-width: 500px;
+    height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .jumbotron-container-login{
-    width: 70%;
+    width: 100%;
+    height: 100%;
     margin: 20px 0;
-    border: 2px solid #1FD07D;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .jumbotron-side img{
-    width: 100%;
+    height: 100%;
+    width: auto;
 }
 .footer{
     width: 100%;
+    height: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+@media only screen and (min-width: 1100px){
+    .form-side{
+        width: 50%;
+    }
+    .login-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 95%;
+        width: 100%;
+    }
+    .line {
+        margin: 50px 0;
+    }
+    .jumbotron-side{
+        width: 50%;
+        height: 100%;
+        /* background-color: #1FD07D; */
+    }
+    .jumbotron-container-login{
+        width: 90%;
+        margin: 5%;
+        height: 90%;
+        border: 2px solid #1FD07D;
+    }
+    .footer{
+        height: 5%;
+    }
 }
