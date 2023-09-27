@@ -98,7 +98,7 @@ textarea:focus, input:focus{
     justify-content: center;
     align-items: center;
 }
-.jumbotron-container{
+.jumbotron-container-login{
     width: 70%;
     margin: 20px 0;
     border: 2px solid #1FD07D;

@@ -6,7 +6,7 @@ function Login(){
     return (
         <div className='login'>
             <div className='jumbotron-side'>
-                <div className='jumbotron-container'>
+                <div className='jumbotron-container-login'>
                     <img src={heroLogin} alt='connection' />
                 </div>
             </div>

@@ -14,8 +14,7 @@ import running from '../image/Running.png';
 import tarkuy from '../image/Tarkuy.png';
 import moonsic from '../image/Moonsic.png';
 import { Link } from 'react-router-dom';
-
-
+import './home.css'
 
 function Home(){
     return (
@@ -41,7 +40,7 @@ function Home(){
                 </div>
             </header>
             <div className='jumbotron'>
-                <div className='jumbotron-container'>
+                <div className='jumbotron-container-home'>
                     <div className='text-jumbotron'>
                         <h1>Bagikan acaramu dengan mudah dan menarik.</h1>
                         <p className='description'>Bagikan informasi secara digital untuk semua acaramu.</p>
