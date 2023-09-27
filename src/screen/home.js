@@ -13,7 +13,7 @@ import orange from '../image/orange.png';
 import running from '../image/Running.png';
 import tarkuy from '../image/Tarkuy.png';
 import moonsic from '../image/Moonsic.png';
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -31,9 +31,9 @@ function Home(){
                         </div>
                     </div>
                     <div className='right-side-header'>
-                        <div className='masuk'>
+                        <Link to='/login' style={{color: 'white', textDecoration: 'none'}} className='masuk'>
                             <p>Masuk</p>
-                        </div>
+                        </Link>
                         <div className='daftar'>
                             <p>Daftar</p>
                         </div>
