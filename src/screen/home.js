@@ -33,9 +33,9 @@ function Home(){
                         <Link to='/login' style={{color: 'white', textDecoration: 'none'}} className='masuk'>
                             <p>Masuk</p>
                         </Link>
-                        <div className='daftar'>
+                        <Link to='/signup' className='daftar'>
                             <p>Daftar</p>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </header>

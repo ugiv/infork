@@ -12,8 +12,10 @@ function Login(){
                 </div>
             </div>
             <div className='form-side'>
-                <h2>Login</h2>
-                <p>Selamat datang kembali</p>
+                <div className='title-form'>
+                    <h2>Login</h2>
+                    <p>Selamat datang kembali</p>
+                </div>
                 <div className="google-button">
                     <img src={google} alt='google logo' />
                     <p>Masuk dengan Google</p>

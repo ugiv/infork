@@ -4,27 +4,39 @@ html{
 .login{
     width: 100%;
     height: 100%;
+    min-height: 700px;
 }
 .login-container {
     width: 100%;
     height: 95%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .form-side{
     width: 90%;
+    height: 70%;
     margin: 0 5% 40px 5%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     /* display: none; */
 }
+.form-side h2{
+    font-size: 24px;
+    margin: 5px;
+}
+.title-form{
+    text-align: center;
+    margin-bottom: 20px;
+}
 .google-button {
-    width: 85%;
+    width: 80%;
     max-width: 400px;
-    height: 35px;
+    min-width: 250px;
+    height: 30px;
     padding: 2px 0;
     border: 1px solid #CCCCCC;
     border-radius: 50px;
@@ -39,26 +51,29 @@ html{
     margin: 0 10px;
 }
 .line{
-    width: 90%;
-    min-width: 250;
+    width: 80%;
+    min-width: 250px;
     max-width: 400px;
     height: 1px;
     background-color: #CCCCCC;
     margin: 20px 0;
 }
 .input-form{
-    width: 85%;
+    width: 80%;
     min-width: 250px;
     max-width: 400px;
 }
 .input-container{
     width: 100%;
-    height: 35px;
+    height: 30px;
     border: 1px solid #CCCCCC;
     padding: 2px 0;
     overflow: hidden;
     border-radius: 50px;
     margin: 10px 0;
+}
+.input-container:focus-within{
+    border: thin solid #1FD07D;
 }
 form p{
     margin: 0;
@@ -104,21 +119,26 @@ textarea:focus, input:focus{
 }
 .jumbotron-side{
     width: 100%;
-    height: 20%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10px 0;
+    /* display: none; */
 }
 .jumbotron-container-login{
-    width: 100%;
-    height: 100%;
-    margin: 20px 0;
+    width: 70%;
+    height: 70%;
+    max-width: 300px;
+    max-height: 150px;
+    padding: 5%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px solid #1FD07D;
 }
 .jumbotron-side img{
     height: 100%;
@@ -145,19 +165,35 @@ textarea:focus, input:focus{
         width: 100%;
     }
     .line {
-        margin: 50px 0;
+        margin: 40px 0;
+        /* background-color: pink; */
+    }
+    .google-button{
+        height: 35px;
+    }
+    .input-container{
+        height: 35px;
     }
     .jumbotron-side{
         width: 50%;
         height: 100%;
+        display: flex;
         /* background-color: #1FD07D; */
+    }
+    .jumbotron-side img {
+        width: 90%;
+        height: auto;
     }
     .jumbotron-container-login{
         width: 90%;
-        margin: 5%;
+        max-width: 700px;
         height: 90%;
+        max-height: 850px;
+        margin: 5%;
         border: 2px solid #1FD07D;
+        padding: 0;
     }
+
     .footer{
         height: 5%;
     }
