@@ -15,8 +15,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 1;
 }
 .main-board {
     width: 80%;
-    background-color: pink;
+}
+.main-board-full {
+    width: 100%;
 }

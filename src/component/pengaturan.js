@@ -1,7 +1,7 @@
 export function Pengaturan(){
     return (
         <div>
-            <p>pengaturan</p>
+            <p>Pengaturan</p>
         </div>
     )
 }

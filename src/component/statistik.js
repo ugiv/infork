@@ -1,7 +1,7 @@
 export function Statistik(){
     return (
         <div>
-            <p>pengaturan</p>
+            <p>Statistik</p>
         </div>
     )
 }
