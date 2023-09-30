@@ -1,0 +1,25 @@
+.sidebar{
+    width: 15%;
+    height: 80%;
+}
+.sidebar-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+}
+.sidebar-container p{
+    font-size: 18px;
+    margin: 0 20px;
+}
+.menu-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.menu-active{
+    background-color: #F1F1F1;
+    color: black;
+}
