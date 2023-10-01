@@ -2,20 +2,40 @@ import './login.css';
 import google from '../image/google-logo.png';
 import heroLogin from '../image/hero-login.png';
 import logo from '../image/logo.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function Login(){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    console.log(email);
-    console.log(password);
+    const [data, setData] = useState();
+    useEffect(() => {
+        async function fetchApi(){
+            let response = await fetch('https://localhost:3001/personal')
+            response = await response.json()
+            setData(response)
+        }
+        fetchApi()
+    })
+    console.log(data)
     const handleSubmit = (e) => {
-        if (email === 'ugi@gmail.com' && password === 'eelu123'){
+        if (password.length >= 7 && email.includes('@')){
+            if (email === 'ugi@gmail.com' && password === 'eelu123'){
+                return navigate('/personal')
+            } else {
+                alert('Your email or password wrong!')
+            }
+        } else if (!email.includes("@") && password.length < 7){
             e.preventDefault();
-            return navigate('/personal')
+            document.getElementById('password-alert').innerHTML = 'Password harus lebih dari 7 karakter';
+            document.getElementById('email-alert').innerHTML = 'Formal email tidak sesuai';
+        } else if (password.length < 7){
+            e.preventDefault();
+            document.getElementById('password-alert').innerHTML = 'Password harus lebih dari 7 karakter';
         } else {
-            alert('Your email or password false')
+            e.preventDefault();
+            document.getElementById('email-alert').innerHTML = 'Formal email tidak sesuai';
+
         }
     }
     const navigate = useNavigate();
@@ -44,11 +64,17 @@ function Login(){
                             <div className="input-container">
                                 <input type='text' onChange={(e) => setEmail(e.target.value)} />
                             </div>
+                            <div className='login-alert'>
+                                <p id='email-alert'></p>
+                            </div>
                         </div>
                         <div className="Email">
                             <p>Password</p>
                             <div className="input-container">
                                 <input type='password' onChange={(e) => setPassword(e.target.value)}/>
+                            </div>
+                            <div className='login-alert'>
+                                <p id='password-alert'></p>
                             </div>
                         </div>
                         <div className='forget-password'>
