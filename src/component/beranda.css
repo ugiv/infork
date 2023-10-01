@@ -1,0 +1,16 @@
+.beranda-menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.beranda-menu p{
+    width: 100px;
+    padding: 10px 0;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px;
+}
+.beranda-menu-active{
+    box-shadow: 0px -3px 0px rgba(0, 0, 0, 1) inset;
+}

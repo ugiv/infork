@@ -1,0 +1,19 @@
+.container-design{
+    overflow-x: auto;
+}
+.row-design{
+    width: 1350px;
+    padding-left: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.design{
+    width: 150px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: #F1F1F1;
+    margin-right: 15px;
+}
