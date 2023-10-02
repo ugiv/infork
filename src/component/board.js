@@ -1,5 +1,5 @@
 import { Beranda } from "./beranda";
-import { Statistik } from "./statistik";
+import { Statistik } from "./statistic";
 import { Pengaturan } from "./pengaturan";
 
 

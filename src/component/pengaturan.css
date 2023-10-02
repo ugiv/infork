@@ -42,7 +42,7 @@ p.setting-title{
 .profile-picture-setting{
     width: 80px;
     height: 80px;
-    background-color: #D9D9D9;
+    background-color: #F1F1F1;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -52,7 +52,7 @@ p.setting-title{
 .setting-container button{
     width: 50px;
     height: 30px;
-    background-color: #D9D9D9;
+    background-color: #F1F1F1;
     font-weight: bold;
     border: none;
 }
