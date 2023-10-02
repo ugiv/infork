@@ -1,18 +1,18 @@
-import logo from '../image/logo.png';
-import hero from '../image/hero.png';
-import music from '../image/music.png';
-import sport from '../image/sport.png';
-import family from '../image/family.png';
-import formal from '../image/formal.png';
-import mockup from '../image/Mockup.png';
-import dibagikan from '../image/mudah-dibagikan.png';
-import dibuat from '../image/Mudah-dibuat.png';
-import gratis from '../image/gratis.png';
-import banner from '../image/Tarkuy-editable.png';
-import orange from '../image/orange.png';
-import running from '../image/Running.png';
-import tarkuy from '../image/Tarkuy.png';
-import moonsic from '../image/Moonsic.png';
+import logo from '../../image/logo.png';
+import hero from '../../image/hero.png';
+import music from '../../image/music.png';
+import sport from '../../image/sport.png';
+import family from '../../image/family.png';
+import formal from '../../image/formal.png';
+import mockup from '../../image/Mockup.png';
+import dibagikan from '../../image/mudah-dibagikan.png';
+import dibuat from '../../image/Mudah-dibuat.png';
+import gratis from '../../image/gratis.png';
+import banner from '../../image/Tarkuy-editable.png';
+import orange from '../../image/orange.png';
+import running from '../../image/Running.png';
+import tarkuy from '../../image/Tarkuy.png';
+import moonsic from '../../image/Moonsic.png';
 import { Link } from 'react-router-dom';
 import './home.css'
 

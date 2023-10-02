@@ -18,8 +18,13 @@
     z-index: 1;
 }
 .main-board {
-    width: 80%;
+    width: 100%;
 }
 .main-board-full {
     width: 100%;
+}
+@media only screen and (min-width: 1100px){
+    .main-board {
+        width: 80%;
+    }   
 }

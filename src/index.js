@@ -7,8 +7,8 @@ import {
    createBrowserRouter,
    RouterProvider
 } from 'react-router-dom';
-import Login from './screen/login';
-import Personal from './screen/personal';
+import Login from './screens/login/login';
+import Personal from './screens/personal/personal';
 
 const router = createBrowserRouter([
   {

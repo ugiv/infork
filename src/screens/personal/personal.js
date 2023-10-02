@@ -1,11 +1,18 @@
 import './personal.css';
-import { Sidebar } from '../component/sidebar';
-import { Header } from '../component/header';
-import { useState } from 'react';
-import { Board } from '../component/board';
+import { Sidebar } from '../../component/sidebar';
+import { Header } from '../../component/header';
+import { useEffect, useState } from 'react';
+import { Board } from '../../component/board';
 
 function Personal(){
     const [sidebar, setSidebar] = useState(true);
+    const width = window.innerWidth;
+    useEffect(() => {
+        if (width < 1100){
+            setSidebar(false);
+            document.getElementById('mainBoard').style.width = '100%';
+        }
+    }, [width])
     const handleSidebar = () => {
         if (sidebar){
             setSidebar(false)

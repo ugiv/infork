@@ -1,23 +1,23 @@
 import './login.css';
-import google from '../image/google-logo.png';
-import heroLogin from '../image/hero-login.png';
-import logo from '../image/logo.png';
-import { useEffect, useState } from 'react';
+import google from '../../image/google-logo.png';
+import heroLogin from '../../image/hero-login.png';
+import logo from '../../image/logo.png';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function Login(){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [data, setData] = useState();
-    useEffect(() => {
-        async function fetchApi(){
-            let response = await fetch('https://localhost:3001/personal')
-            response = await response.json()
-            setData(response)
-        }
-        fetchApi()
-    })
-    console.log(data)
+    // const [data, setData] = useState();
+    // useEffect(() => {
+    //     async function fetchApi(){
+    //         let response = await fetch('https://localhost:3001/personal')
+    //         response = await response.json()
+    //         setData(response)
+    //     }
+    //     fetchApi()
+    // })
+    // console.log(data)
     const handleSubmit = (e) => {
         if (password.length >= 7 && email.includes('@')){
             if (email === 'ugi@gmail.com' && password === 'eelu123'){
