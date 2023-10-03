@@ -3,9 +3,13 @@ import { Sidebar } from '../../component/sidebar';
 import { Header } from '../../component/header';
 import { useEffect, useState } from 'react';
 import { Board } from '../../component/board';
+import { useSelector } from 'react-redux';
+import { selectUser } from '../../slice/userData';
 
 function Personal(){
     const [sidebar, setSidebar] = useState(true);
+    const user = useSelector(selectUser)
+    console.log(user)
     const width = window.innerWidth;
     useEffect(() => {
         if (width < 1100){

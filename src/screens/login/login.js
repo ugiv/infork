@@ -2,29 +2,43 @@ import './login.css';
 import google from '../../image/google-logo.png';
 import heroLogin from '../../image/hero-login.png';
 import logo from '../../image/logo.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { addUser } from '../../slice/userData';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch} from 'react-redux';
 
 function Login(){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    // const [data, setData] = useState();
-    // useEffect(() => {
-    //     async function fetchApi(){
-    //         let response = await fetch('https://localhost:3001/personal')
-    //         response = await response.json()
-    //         setData(response)
-    //     }
-    //     fetchApi()
-    // })
-    // console.log(data)
+    const [data, setData] = useState();
+    // const userData = useSelector(selectUser);
+    const dispatch = useDispatch()
+    useEffect(() => {
+       const fetching = async () => {
+         const response = await fetch('http://localhost:3001/personal');
+         const data = await response.json();
+         setData(data);
+       }
+        fetching()
+    }, [])
+    const findUser = () => {
+        const emailVal = data.findIndex((x) => {
+            return x.email === email
+         });
+        const passwordVal = data[emailVal].password;    
+        if (passwordVal === password){
+            dispatch(addUser(data[emailVal]))
+            setEmail('');
+            setPassword('');
+            navigate('/personal')
+        } else {
+            alert('kamu salah >>>')
+        }
+    }
     const handleSubmit = (e) => {
         if (password.length >= 7 && email.includes('@')){
-            if (email === 'ugi@gmail.com' && password === 'eelu123'){
-                return navigate('/personal')
-            } else {
-                alert('Your email or password wrong!')
-            }
+            e.preventDefault()
+            findUser()
         } else if (!email.includes("@") && password.length < 7){
             e.preventDefault();
             document.getElementById('password-alert').innerHTML = 'Password harus lebih dari 7 karakter';
