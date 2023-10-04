@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 import Login from './screens/login/login';
 import Personal from './screens/personal/personal'
+import Orange from './screens/digitalPage/orange';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<Home/>} />
           <Route path='/login' element={<Login/>} />
           <Route path='/personal' element={<Personal/>} />
+          <Route path='/orange' element={<Orange />} />
         </Routes>
       </BrowserRouter>
     </div>
