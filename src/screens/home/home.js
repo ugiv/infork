@@ -149,7 +149,9 @@ function Home(){
                 <h3>Digital Page Design</h3>
                 <div className='digital-page-scroll'>
                     <div className='digital-page-container'>
-                        <img src={orange} alt='orange' />
+                        <Link to='/orange'>
+                            <img src={orange} alt='orange' />
+                        </Link>
                         <img src={moonsic} alt='orange' />
                         <img src={running} alt='orange' />
                         <img src={tarkuy} alt='orange' />
